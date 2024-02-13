@@ -110,17 +110,17 @@ begin
             assert w_Y = '1' report "error on Aug" severity failure; 
         w_sw <= x"9"; wait for 10 ns;--1001
              assert w_Y = '0' report "error on Sep" severity failure;
-        w_sw <= "1010"; wait for 10 ns;--1010
+        w_sw <= x"A"; wait for 10 ns;--1010
              assert w_Y = '1' report "error on Oct" severity failure;   
-        w_sw <= "1011"; wait for 10 ns;--1011
+        w_sw <= x"B"; wait for 10 ns;--1011
              assert w_Y = '0' report "error on Nov" severity failure;   
-        w_sw <= "1100"; wait for 10 ns;--1100
+        w_sw <= x"C"; wait for 10 ns;--1100
              assert w_Y = '1' report "error on Dec" severity failure; 
-        w_sw <= "1101"; wait for 10 ns;--1101
+        w_sw <= x"D"; wait for 10 ns;--1101
              assert w_Y = '0' report "error on x13" severity failure;
-        w_sw <= "1110"; wait for 10 ns;--1110
+        w_sw <= x"E"; wait for 10 ns;--1110
              assert w_Y = '0' report "error on x14" severity failure;   
-        w_sw <= "1111"; wait for 10 ns;--1111
+        w_sw <= x"F"; wait for 10 ns;--1111
              assert w_Y = '0' report "error on x15" severity failure;
 
 		wait; -- wait forever

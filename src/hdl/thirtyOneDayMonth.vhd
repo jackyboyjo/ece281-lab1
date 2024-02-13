@@ -67,17 +67,9 @@ end thirtyOneDayMonth;
 
 architecture thirtyOneDayMonth_arch of thirtyOneDayMonth is 
 	-- include components declarations and signals
-	component thirtyOneDayMonth is
-	port(
-	   i_A : in std_logic;
-	   i_B : in std_logic;
-	   i_C : in std_logic;
-	   i_D : in std_logic;
-	   
-	   o_Y : out std_logic
-	   );
-	--signals internal to the architecture are declared and initialized such as w_sel
-       end component;
+
+       --signals internal to the architecture are declared and initialized such as w_sel
+
        signal w_sel : std_logic_vector (2 downto 0);
 begin
 	-- CONCURRENT STATEMENTS---------------------------------------
