@@ -4,6 +4,11 @@ VHDL template for ECE 281 [Lab 1](https://usafa-ece.github.io/ece281-book/lab/la
 
 Targeted toward Digilent Basys3. Make sure to install the [board files](https://github.com/Xilinx/XilinxBoardStore/tree/2018.2/boards/Digilent/basys3).
 
+BASYS3 VIDEO
+https://drive.google.com/file/d/1t4qKp5yfQuV_ucRjzMbky1pFaFIVQuUm/view?usp=sharing
+
+BREADBOARD VIDEO
+https://drive.google.com/file/d/1dYAnXTbJCyux6uAS0aPgZpYVEXJkT-AW/view?usp=sharing
 Tested on Windows 10.
 
 ## Usage
