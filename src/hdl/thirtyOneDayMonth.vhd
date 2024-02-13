@@ -81,6 +81,13 @@ begin
 	--finish assigning signals
 	
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
-	o_Y <= (not i_A and i_D) or (not i_D and i_A);
+	o_Y <= i_D when (w_sel = "000") else
+	       i_D when (w_sel = "001") else
+	       i_D when (w_sel = "010") else
+	       i_D when (w_sel = "011") else
+	       not i_D when (w_sel = "100") else
+	       not i_D when (w_sel = "101") else
+	       not i_D when (w_sel = "110") else
+	       '0';
 	---------------------------------------------------------------	
 end thirtyOneDayMonth_arch;
